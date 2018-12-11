@@ -1,0 +1,11 @@
+这里包含作业和设计，作业为更改ppt（如何引用dll）增加的ppt就是
+设计我选择的是数据库，这里需要引用oracle的odac 的dll ，版本需要是64位，需要特定的名为students的表，数据见我的程序。表中所有数据类型均为字符类型不为空:
+create  table students 
+(student_ID varchar2(20) not null primary key,
+ name varchar2(20) not null,
+ score varchar2(20) not null,
+ classes varchar2(20) not null
+  );                
+ 脚本如上。
+ add 和search键会弹出带表格的窗口，填写对应数据执行操作，查操作会返回结果到窗口1中。双击窗口1中的结果进入删和改操作，删直接删，改则是更新为弹出的表中数据。
+ 增和改操作必须所有栏都要数据否则会弹出窗口提示。所有操作都有确认的消息弹出。
